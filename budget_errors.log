@@ -1,0 +1,133 @@
+[18-Apr-2025 16:57:51 Europe/Berlin] [2025-04-18 16:57:51] - Database connection successful
+[18-Apr-2025 16:57:51 Europe/Berlin] [2025-04-18 16:57:51] - Raw input received - Data: "{\"totalBudget\":1000,\"currency\":\"USD\",\"categories\":[{\"name\":\"Accommodation\",\"percentage\":25},{\"name\":\"Food\",\"percentage\":25},{\"name\":\"Transport\",\"percentage\":25},{\"name\":\"Miscellaneous\",\"percentage\":15},{\"name\":\"Savings\",\"percentage\":10}]}"
+[18-Apr-2025 16:57:51 Europe/Berlin] [2025-04-18 16:57:51] - Processing budget save for user ID: 11, Budget: 1000, Currency: USD - Data: {"categories_count":5}
+[18-Apr-2025 16:57:51 Europe/Berlin] [2025-04-18 16:57:52] - Starting database transaction
+[18-Apr-2025 16:57:51 Europe/Berlin] [2025-04-18 16:57:52] - ERROR: Prepare statement failed (delete categories): Table 'currency_buddy.budget_categories' doesn't exist
+Trace: #0 {main}
+[18-Apr-2025 16:57:51 Europe/Berlin] [2025-04-18 16:57:52] - Database connection closed
+[18-Apr-2025 17:01:05 Europe/Berlin] [2025-04-18 17:01:05] - Database connection successful
+[18-Apr-2025 17:01:05 Europe/Berlin] [2025-04-18 17:01:05] - Raw input received - Data: "{\"totalBudget\":1000,\"currency\":\"USD\",\"categories\":[{\"name\":\"Accommodation\",\"percentage\":25},{\"name\":\"Food\",\"percentage\":25},{\"name\":\"Transport\",\"percentage\":25},{\"name\":\"Miscellaneous\",\"percentage\":15},{\"name\":\"Savings\",\"percentage\":10}]}"
+[18-Apr-2025 17:01:05 Europe/Berlin] [2025-04-18 17:01:05] - Processing budget save for user ID: 11, Budget: 1000, Currency: USD - Data: {"categories_count":5}
+[18-Apr-2025 17:01:05 Europe/Berlin] [2025-04-18 17:01:05] - Starting database transaction
+[18-Apr-2025 17:01:05 Europe/Berlin] [2025-04-18 17:01:05] - Creating budget_categories table as it doesn't exist
+[18-Apr-2025 17:01:05 Europe/Berlin] [2025-04-18 17:01:05] - budget_categories table created successfully
+[18-Apr-2025 17:01:05 Europe/Berlin] [2025-04-18 17:01:05] - Deleted existing categories for user 11
+[18-Apr-2025 17:01:05 Europe/Berlin] [2025-04-18 17:01:05] - Creating user_settings table
+[18-Apr-2025 17:01:05 Europe/Berlin] [2025-04-18 17:01:05] - user_settings table created successfully
+[18-Apr-2025 17:01:05 Europe/Berlin] [2025-04-18 17:01:05] - Saved budget amount: 1000
+[18-Apr-2025 17:01:05 Europe/Berlin] [2025-04-18 17:01:05] - Saved currency: USD
+[18-Apr-2025 17:01:05 Europe/Berlin] [2025-04-18 17:01:05] - Saving category 0 - Data: {"name":"Accommodation","percentage":25}
+[18-Apr-2025 17:01:05 Europe/Berlin] [2025-04-18 17:01:05] - Saving category 1 - Data: {"name":"Food","percentage":25}
+[18-Apr-2025 17:01:05 Europe/Berlin] [2025-04-18 17:01:05] - Saving category 2 - Data: {"name":"Transport","percentage":25}
+[18-Apr-2025 17:01:05 Europe/Berlin] [2025-04-18 17:01:05] - Saving category 3 - Data: {"name":"Miscellaneous","percentage":15}
+[18-Apr-2025 17:01:05 Europe/Berlin] [2025-04-18 17:01:05] - Saving category 4 - Data: {"name":"Savings","percentage":10}
+[18-Apr-2025 17:01:05 Europe/Berlin] [2025-04-18 17:01:05] - Budget saved successfully for user 11
+[18-Apr-2025 17:01:05 Europe/Berlin] [2025-04-18 17:01:05] - Database connection closed
+[18-Apr-2025 17:26:17 Europe/Berlin] [2025-04-18 17:26:17] - Database connection successful
+[18-Apr-2025 17:26:17 Europe/Berlin] [2025-04-18 17:26:17] - Raw input received - Data: "{\"totalBudget\":1000,\"currency\":\"USD\",\"categories\":[{\"name\":\"Accommodation\",\"percentage\":15},{\"name\":\"Food\",\"percentage\":10},{\"name\":\"Miscellaneous\",\"percentage\":10},{\"name\":\"Savings\",\"percentage\":35},{\"name\":\"Transport\",\"percentage\":10},{\"name\":\"xzy\",\"percentage\":20}]}"
+[18-Apr-2025 17:26:17 Europe/Berlin] [2025-04-18 17:26:17] - Processing budget save for user ID: 11, Budget: 1000, Currency: USD - Data: {"categories_count":6}
+[18-Apr-2025 17:26:17 Europe/Berlin] [2025-04-18 17:26:17] - Starting database transaction
+[18-Apr-2025 17:26:17 Europe/Berlin] [2025-04-18 17:26:17] - Deleted existing categories for user 11
+[18-Apr-2025 17:26:17 Europe/Berlin] [2025-04-18 17:26:17] - Saved budget amount: 1000
+[18-Apr-2025 17:26:17 Europe/Berlin] [2025-04-18 17:26:17] - Saved currency: USD
+[18-Apr-2025 17:26:17 Europe/Berlin] [2025-04-18 17:26:17] - Saving category 0 - Data: {"name":"Accommodation","percentage":15}
+[18-Apr-2025 17:26:17 Europe/Berlin] [2025-04-18 17:26:17] - Saving category 1 - Data: {"name":"Food","percentage":10}
+[18-Apr-2025 17:26:17 Europe/Berlin] [2025-04-18 17:26:17] - Saving category 2 - Data: {"name":"Miscellaneous","percentage":10}
+[18-Apr-2025 17:26:17 Europe/Berlin] [2025-04-18 17:26:17] - Saving category 3 - Data: {"name":"Savings","percentage":35}
+[18-Apr-2025 17:26:17 Europe/Berlin] [2025-04-18 17:26:17] - Saving category 4 - Data: {"name":"Transport","percentage":10}
+[18-Apr-2025 17:26:17 Europe/Berlin] [2025-04-18 17:26:17] - Saving category 5 - Data: {"name":"xzy","percentage":20}
+[18-Apr-2025 17:26:17 Europe/Berlin] [2025-04-18 17:26:17] - Budget saved successfully for user 11
+[18-Apr-2025 17:26:17 Europe/Berlin] [2025-04-18 17:26:17] - Database connection closed
+[18-Apr-2025 17:29:29 Europe/Berlin] [2025-04-18 17:29:29] - Database connection successful
+[18-Apr-2025 17:29:29 Europe/Berlin] [2025-04-18 17:29:29] - Raw input received - Data: "{\"totalBudget\":1000,\"currency\":\"USD\",\"categories\":[{\"name\":\"Accommodation\",\"percentage\":15},{\"name\":\"Food\",\"percentage\":10},{\"name\":\"Miscellaneous\",\"percentage\":10},{\"name\":\"Savings\",\"percentage\":35},{\"name\":\"abc\",\"percentage\":10},{\"name\":\"xzy\",\"percentage\":20}]}"
+[18-Apr-2025 17:29:29 Europe/Berlin] [2025-04-18 17:29:29] - Processing budget save for user ID: 11, Budget: 1000, Currency: USD - Data: {"categories_count":6}
+[18-Apr-2025 17:29:29 Europe/Berlin] [2025-04-18 17:29:29] - Starting database transaction
+[18-Apr-2025 17:29:29 Europe/Berlin] [2025-04-18 17:29:29] - Deleted existing categories for user 11
+[18-Apr-2025 17:29:29 Europe/Berlin] [2025-04-18 17:29:29] - Saved budget amount: 1000
+[18-Apr-2025 17:29:29 Europe/Berlin] [2025-04-18 17:29:29] - Saved currency: USD
+[18-Apr-2025 17:29:29 Europe/Berlin] [2025-04-18 17:29:29] - Saving category 0 - Data: {"name":"Accommodation","percentage":15}
+[18-Apr-2025 17:29:29 Europe/Berlin] [2025-04-18 17:29:29] - Saving category 1 - Data: {"name":"Food","percentage":10}
+[18-Apr-2025 17:29:29 Europe/Berlin] [2025-04-18 17:29:29] - Saving category 2 - Data: {"name":"Miscellaneous","percentage":10}
+[18-Apr-2025 17:29:29 Europe/Berlin] [2025-04-18 17:29:29] - Saving category 3 - Data: {"name":"Savings","percentage":35}
+[18-Apr-2025 17:29:29 Europe/Berlin] [2025-04-18 17:29:29] - Saving category 4 - Data: {"name":"abc","percentage":10}
+[18-Apr-2025 17:29:29 Europe/Berlin] [2025-04-18 17:29:29] - Saving category 5 - Data: {"name":"xzy","percentage":20}
+[18-Apr-2025 17:29:29 Europe/Berlin] [2025-04-18 17:29:29] - Budget saved successfully for user 11
+[18-Apr-2025 17:29:29 Europe/Berlin] [2025-04-18 17:29:29] - Database connection closed
+[18-Apr-2025 17:32:58 Europe/Berlin] [2025-04-18 17:32:58] - Database connection successful
+[18-Apr-2025 17:32:58 Europe/Berlin] [2025-04-18 17:32:58] - Raw input received - Data: "{\"totalBudget\":1000,\"currency\":\"USD\",\"categories\":[{\"name\":\"Accommodation\",\"percentage\":25},{\"name\":\"Food\",\"percentage\":25},{\"name\":\"Transport\",\"percentage\":25},{\"name\":\"Miscellaneous\",\"percentage\":15},{\"name\":\"Savings\",\"percentage\":10}]}"
+[18-Apr-2025 17:32:58 Europe/Berlin] [2025-04-18 17:32:58] - Processing budget save for user ID: 15, Budget: 1000, Currency: USD - Data: {"categories_count":5}
+[18-Apr-2025 17:32:58 Europe/Berlin] [2025-04-18 17:32:58] - Starting database transaction
+[18-Apr-2025 17:32:58 Europe/Berlin] [2025-04-18 17:32:58] - Deleted existing categories for user 15
+[18-Apr-2025 17:32:58 Europe/Berlin] [2025-04-18 17:32:58] - Saved budget amount: 1000
+[18-Apr-2025 17:32:58 Europe/Berlin] [2025-04-18 17:32:58] - Saved currency: USD
+[18-Apr-2025 17:32:58 Europe/Berlin] [2025-04-18 17:32:58] - Saving category 0 - Data: {"name":"Accommodation","percentage":25}
+[18-Apr-2025 17:32:58 Europe/Berlin] [2025-04-18 17:32:58] - Saving category 1 - Data: {"name":"Food","percentage":25}
+[18-Apr-2025 17:32:58 Europe/Berlin] [2025-04-18 17:32:58] - Saving category 2 - Data: {"name":"Transport","percentage":25}
+[18-Apr-2025 17:32:58 Europe/Berlin] [2025-04-18 17:32:58] - Saving category 3 - Data: {"name":"Miscellaneous","percentage":15}
+[18-Apr-2025 17:32:58 Europe/Berlin] [2025-04-18 17:32:58] - Saving category 4 - Data: {"name":"Savings","percentage":10}
+[18-Apr-2025 17:32:58 Europe/Berlin] [2025-04-18 17:32:58] - Budget saved successfully for user 15
+[18-Apr-2025 17:32:58 Europe/Berlin] [2025-04-18 17:32:58] - Database connection closed
+[18-Apr-2025 18:09:20 Europe/Berlin] [2025-04-18 18:09:20] - User not logged in. Session data: []
+[18-Apr-2025 18:10:15 Europe/Berlin] [2025-04-18 18:10:15] - Database connection successful
+[18-Apr-2025 18:10:15 Europe/Berlin] [2025-04-18 18:10:15] - Raw input received - Data: "{\"totalBudget\":1000,\"currency\":\"USD\",\"categories\":[{\"name\":\"Accommodation\",\"percentage\":25},{\"name\":\"Food\",\"percentage\":25},{\"name\":\"Transport\",\"percentage\":25},{\"name\":\"Miscellaneous\",\"percentage\":15},{\"name\":\"Savings\",\"percentage\":10}]}"
+[18-Apr-2025 18:10:15 Europe/Berlin] [2025-04-18 18:10:15] - Processing budget save for user ID: 16, Budget: 1000, Currency: USD - Data: {"categories_count":5}
+[18-Apr-2025 18:10:15 Europe/Berlin] [2025-04-18 18:10:15] - Starting database transaction
+[18-Apr-2025 18:10:15 Europe/Berlin] [2025-04-18 18:10:15] - Deleted existing categories for user 16
+[18-Apr-2025 18:10:15 Europe/Berlin] [2025-04-18 18:10:15] - Saved budget amount: 1000
+[18-Apr-2025 18:10:15 Europe/Berlin] [2025-04-18 18:10:15] - Saved currency: USD
+[18-Apr-2025 18:10:15 Europe/Berlin] [2025-04-18 18:10:15] - Saving category 0 - Data: {"name":"Accommodation","percentage":25}
+[18-Apr-2025 18:10:15 Europe/Berlin] [2025-04-18 18:10:15] - Saving category 1 - Data: {"name":"Food","percentage":25}
+[18-Apr-2025 18:10:15 Europe/Berlin] [2025-04-18 18:10:15] - Saving category 2 - Data: {"name":"Transport","percentage":25}
+[18-Apr-2025 18:10:15 Europe/Berlin] [2025-04-18 18:10:15] - Saving category 3 - Data: {"name":"Miscellaneous","percentage":15}
+[18-Apr-2025 18:10:15 Europe/Berlin] [2025-04-18 18:10:15] - Saving category 4 - Data: {"name":"Savings","percentage":10}
+[18-Apr-2025 18:10:15 Europe/Berlin] [2025-04-18 18:10:15] - Budget saved successfully for user 16
+[18-Apr-2025 18:10:15 Europe/Berlin] [2025-04-18 18:10:15] - Database connection closed
+[18-Apr-2025 18:10:37 Europe/Berlin] [2025-04-18 18:10:37] - Database connection successful
+[18-Apr-2025 18:10:37 Europe/Berlin] [2025-04-18 18:10:37] - Raw input received - Data: "{\"totalBudget\":1000,\"currency\":\"USD\",\"categories\":[{\"name\":\"Accommodation\",\"percentage\":10},{\"name\":\"Food\",\"percentage\":10},{\"name\":\"Transport\",\"percentage\":10},{\"name\":\"Miscellaneous\",\"percentage\":10},{\"name\":\"Savings\",\"percentage\":60}]}"
+[18-Apr-2025 18:10:37 Europe/Berlin] [2025-04-18 18:10:37] - Processing budget save for user ID: 16, Budget: 1000, Currency: USD - Data: {"categories_count":5}
+[18-Apr-2025 18:10:37 Europe/Berlin] [2025-04-18 18:10:37] - Starting database transaction
+[18-Apr-2025 18:10:37 Europe/Berlin] [2025-04-18 18:10:37] - Deleted existing categories for user 16
+[18-Apr-2025 18:10:37 Europe/Berlin] [2025-04-18 18:10:37] - Saved budget amount: 1000
+[18-Apr-2025 18:10:37 Europe/Berlin] [2025-04-18 18:10:37] - Saved currency: USD
+[18-Apr-2025 18:10:37 Europe/Berlin] [2025-04-18 18:10:37] - Saving category 0 - Data: {"name":"Accommodation","percentage":10}
+[18-Apr-2025 18:10:37 Europe/Berlin] [2025-04-18 18:10:37] - Saving category 1 - Data: {"name":"Food","percentage":10}
+[18-Apr-2025 18:10:37 Europe/Berlin] [2025-04-18 18:10:37] - Saving category 2 - Data: {"name":"Transport","percentage":10}
+[18-Apr-2025 18:10:37 Europe/Berlin] [2025-04-18 18:10:37] - Saving category 3 - Data: {"name":"Miscellaneous","percentage":10}
+[18-Apr-2025 18:10:37 Europe/Berlin] [2025-04-18 18:10:37] - Saving category 4 - Data: {"name":"Savings","percentage":60}
+[18-Apr-2025 18:10:37 Europe/Berlin] [2025-04-18 18:10:37] - Budget saved successfully for user 16
+[18-Apr-2025 18:10:37 Europe/Berlin] [2025-04-18 18:10:37] - Database connection closed
+[18-Apr-2025 18:33:34 Europe/Berlin] [2025-04-18 18:33:34] - Database connection successful
+[18-Apr-2025 18:33:34 Europe/Berlin] [2025-04-18 18:33:34] - Raw input received - Data: "{\"totalBudget\":1000,\"currency\":\"USD\",\"categories\":[{\"name\":\"Accommodation\",\"percentage\":25},{\"name\":\"Food\",\"percentage\":25},{\"name\":\"Transport\",\"percentage\":25},{\"name\":\"Miscellaneous\",\"percentage\":20},{\"name\":\"Savings\",\"percentage\":0},{\"name\":\"xyx\",\"percentage\":5}]}"
+[18-Apr-2025 18:33:34 Europe/Berlin] [2025-04-18 18:33:34] - Processing budget save for user ID: 16, Budget: 1000, Currency: USD - Data: {"categories_count":6}
+[18-Apr-2025 18:33:34 Europe/Berlin] [2025-04-18 18:33:34] - User ID 16 not found in users table
+[18-Apr-2025 18:37:06 Europe/Berlin] [2025-04-18 18:37:06] - User not logged in. Session data: []
+[18-Apr-2025 18:43:07 Europe/Berlin] [2025-04-18 18:43:07] - User not logged in. Session data: []
+[18-Apr-2025 18:45:47 Europe/Berlin] [2025-04-18 18:45:47] - Database connection successful
+[18-Apr-2025 18:45:47 Europe/Berlin] [2025-04-18 18:45:47] - Raw input received - Data: "{\"totalBudget\":1000,\"currency\":\"USD\",\"categories\":[{\"name\":\"Accommodation\",\"percentage\":25},{\"name\":\"Food\",\"percentage\":25},{\"name\":\"Transport\",\"percentage\":25},{\"name\":\"Miscellaneous\",\"percentage\":15},{\"name\":\"Savings\",\"percentage\":10}]}"
+[18-Apr-2025 18:45:47 Europe/Berlin] [2025-04-18 18:45:47] - Processing budget save for user ID: 17, Budget: 1000, Currency: USD - Data: {"categories_count":5}
+[18-Apr-2025 18:45:47 Europe/Berlin] [2025-04-18 18:45:47] - Starting database transaction
+[18-Apr-2025 18:45:47 Europe/Berlin] [2025-04-18 18:45:47] - Deleted existing categories for user 17
+[18-Apr-2025 18:45:47 Europe/Berlin] [2025-04-18 18:45:47] - Saved budget amount: 1000
+[18-Apr-2025 18:45:47 Europe/Berlin] [2025-04-18 18:45:47] - Saved currency: USD
+[18-Apr-2025 18:45:47 Europe/Berlin] [2025-04-18 18:45:47] - Saving category 0 - Data: {"name":"Accommodation","percentage":25}
+[18-Apr-2025 18:45:47 Europe/Berlin] [2025-04-18 18:45:47] - Saving category 1 - Data: {"name":"Food","percentage":25}
+[18-Apr-2025 18:45:47 Europe/Berlin] [2025-04-18 18:45:47] - Saving category 2 - Data: {"name":"Transport","percentage":25}
+[18-Apr-2025 18:45:47 Europe/Berlin] [2025-04-18 18:45:47] - Saving category 3 - Data: {"name":"Miscellaneous","percentage":15}
+[18-Apr-2025 18:45:47 Europe/Berlin] [2025-04-18 18:45:47] - Saving category 4 - Data: {"name":"Savings","percentage":10}
+[18-Apr-2025 18:45:47 Europe/Berlin] [2025-04-18 18:45:47] - Budget saved successfully for user 17
+[18-Apr-2025 18:45:47 Europe/Berlin] [2025-04-18 18:45:47] - Database connection closed
+[18-Apr-2025 18:46:28 Europe/Berlin] [2025-04-18 18:46:28] - Database connection successful
+[18-Apr-2025 18:46:28 Europe/Berlin] [2025-04-18 18:46:28] - Raw input received - Data: "{\"totalBudget\":1000,\"currency\":\"USD\",\"categories\":[{\"name\":\"Accommodation\",\"percentage\":20},{\"name\":\"Food\",\"percentage\":15},{\"name\":\"Miscellaneous\",\"percentage\":10},{\"name\":\"Savings\",\"percentage\":40},{\"name\":\"Transport\",\"percentage\":5},{\"name\":\"abc\",\"percentage\":10}]}"
+[18-Apr-2025 18:46:28 Europe/Berlin] [2025-04-18 18:46:28] - Processing budget save for user ID: 17, Budget: 1000, Currency: USD - Data: {"categories_count":6}
+[18-Apr-2025 18:46:28 Europe/Berlin] [2025-04-18 18:46:28] - Starting database transaction
+[18-Apr-2025 18:46:28 Europe/Berlin] [2025-04-18 18:46:28] - Deleted existing categories for user 17
+[18-Apr-2025 18:46:28 Europe/Berlin] [2025-04-18 18:46:28] - Saved budget amount: 1000
+[18-Apr-2025 18:46:28 Europe/Berlin] [2025-04-18 18:46:28] - Saved currency: USD
+[18-Apr-2025 18:46:28 Europe/Berlin] [2025-04-18 18:46:28] - Saving category 0 - Data: {"name":"Accommodation","percentage":20}
+[18-Apr-2025 18:46:28 Europe/Berlin] [2025-04-18 18:46:28] - Saving category 1 - Data: {"name":"Food","percentage":15}
+[18-Apr-2025 18:46:28 Europe/Berlin] [2025-04-18 18:46:28] - Saving category 2 - Data: {"name":"Miscellaneous","percentage":10}
+[18-Apr-2025 18:46:28 Europe/Berlin] [2025-04-18 18:46:28] - Saving category 3 - Data: {"name":"Savings","percentage":40}
+[18-Apr-2025 18:46:28 Europe/Berlin] [2025-04-18 18:46:28] - Saving category 4 - Data: {"name":"Transport","percentage":5}
+[18-Apr-2025 18:46:28 Europe/Berlin] [2025-04-18 18:46:28] - Saving category 5 - Data: {"name":"abc","percentage":10}
+[18-Apr-2025 18:46:28 Europe/Berlin] [2025-04-18 18:46:28] - Budget saved successfully for user 17
+[18-Apr-2025 18:46:28 Europe/Berlin] [2025-04-18 18:46:28] - Database connection closed

@@ -1,0 +1,397 @@
+/* Authentication Styles */
+.auth-container {
+    padding: 60px 0;
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+}
+
+.auth-container .container {
+    display: flex;
+    box-shadow: var(--shadow);
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    max-width: 1000px;
+}
+
+.auth-form-container {
+    flex: 1;
+    padding: 40px;
+}
+
+.auth-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.auth-header h2 {
+    font-size: 1.8rem;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+.auth-header p {
+    color: var(--text-light);
+}
+
+/* Use base form styles from style.css, add auth-specific styling */
+.auth-form .form-group {
+    margin-bottom: 20px;
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.auth-form input,
+.auth-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e1e5ee;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+/* Password field specific styling */
+.input-wrapper {
+    position: relative;
+}
+  
+.input-wrapper i.fa-lock {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-light);
+    z-index: 1;
+}
+  
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-light);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    z-index: 1;
+}
+  
+.auth-form input[type="password"],
+.auth-form input.password-visible {
+    width: 100%;
+    padding: 12px 40px;
+}
+
+.toggle-password:hover {
+    color: var(--primary-color);
+}
+
+.toggle-password:focus {
+    outline: none;
+}
+
+.auth-form input:focus,
+.auth-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(78, 107, 255, 0.1);
+}
+
+.password-strength-meter {
+    height: 5px;
+    background-color: #e1e5eb;
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.strength-bar {
+    height: 100%;
+    width: 0;
+    transition: var(--transition);
+}
+
+.auth-form small {
+    display: block;
+    color: var(--text-light);
+    margin-top: 8px;
+    font-size: 0.8rem;
+}
+
+/* Style for checkbox groups */
+.terms,
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.terms input[type="checkbox"],
+.remember-me input[type="checkbox"] {
+    margin: 0;
+    min-width: 16px;
+    height: 16px;
+    accent-color: var(--primary-color);
+}
+
+.terms label,
+.remember-me label {
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 0.9rem;
+    padding-left: 0;
+}
+
+.btn-block {
+    width: 100%;
+    margin: 25px 0;
+    font-size: 1rem;
+    padding: 14px;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-top: 8px;
+}
+
+.forgot-password a {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.forgot-password a:hover {
+    color: var(--primary-color);
+}
+
+.social-login {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.social-login p {
+    position: relative;
+    margin-bottom: 20px;
+    color: var(--text-light);
+}
+
+.social-login p::before,
+.social-login p::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background-color: #e1e5eb;
+}
+
+.social-login p::before {
+    left: 0;
+}
+
+.social-login p::after {
+    right: 0;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.social-btn.google {
+    background-color: #f8f9ff;
+    color: var(--text-dark);
+    border: 1px solid #e1e5eb;
+}
+
+.social-btn.facebook {
+    background-color: #3b5998;
+    color: white;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--text-light);
+}
+
+.auth-banner {
+    flex: 1;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auth-banner h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.benefits-list {
+    margin-bottom: 40px;
+}
+
+.benefits-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.benefits-list i {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+}
+
+.testimonial {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: auto;
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.testimonial-author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial-author span {
+    font-weight: 600;
+}
+
+.rating {
+    color: var(--accent-color);
+}
+
+.app-preview {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.app-preview img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Alert messages - consistent with other alert styles */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.alert-danger {
+    background-color: rgba(255, 77, 77, 0.1);
+    color: #ff4d4d;
+    border: 1px solid rgba(255, 77, 77, 0.2);
+}
+
+.alert-success {
+    background-color: rgba(55, 200, 171, 0.2);
+    border: 1px solid var(--secondary-color);
+    color: #2a9d8b;
+}
+
+/* Logout Styles */
+.logout-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.logout-buttons .btn {
+    min-width: 140px;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .auth-container .container {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 768px) {
+    .auth-container .container {
+        flex-direction: column;
+    }
+    
+    .auth-banner {
+        order: -1;
+        padding: 30px;
+    }
+    
+    .benefits-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    
+    .benefits-list li {
+        margin-bottom: 0;
+    }
+    
+    .testimonial {
+        display: none;
+    }
+    
+    .app-preview {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .auth-form-container {
+        padding: 30px 20px;
+    }
+    
+    .benefits-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .social-buttons {
+        flex-direction: column;
+    }
+}

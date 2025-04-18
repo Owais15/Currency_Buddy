@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Buddy - Your Financial Companion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-coins"></i>
+                <h1>Currency Buddy</h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+                <ul>
+                    <li><a href="index.php" class="active">Home</a></li>
+                    <li><a href="currencyConverter.php">Currency Converter</a></li>
+                    <li><a href="budgetAllocator.php">Budget Allocator</a></li>
+                    <li><a href="budgetCalulator.php">Budget Calculator</a></li>
+                    <li><a href="login.php" class="btn-login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Manage Your Money With Confidence</h2>
+                <p>Convert currencies and track your budget all in one place</p>
+                <div class="hero-buttons">
+                    <a href="currencyConverter.php" class="btn btn-primary">Convert Currency</a>
+                    <a href="budgetAllocator.php" class="btn btn-secondary">Plan Your Budget</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://previews.123rf.com/images/gfxnazim/gfxnazim2306/gfxnazim230600046/206344983-financial-planning-and-management-illustration-vector-set-professional-finance-management-visual.jpg" alt="Financial planning illustration">
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Features That Make Money Management Simple</h2>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>Currency Conversion</h3>
+                    <p>Convert between 170+ global currencies with real-time exchange rates</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Budget Allocation</h3>
+                    <p>Divide your income into spending categories with smart recommendations</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Budget Calculator</h3>
+                    <p>Track expenses and see where your money goes with visual analytics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Take Control of Your Finances?</h2>
+            <p>Sign up for free and start your journey to financial wellness today</p>
+            <a href="signup.php" class="btn btn-primary">Get Started</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-coins"></i>
+                    <h2>Currency Buddy</h2>
+                    <p>Your financial companion</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="currency-converter.php">Currency Converter</a></li>
+                        <li><a href="budget-allocator.php">Budget Allocator</a></li>
+                        <li><a href="budget-calculator.php">Budget Calculator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Financial Tips</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for financial tips and updates</p>
+                    <form action="subscribe.php" method="POST">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Currency Buddy. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
