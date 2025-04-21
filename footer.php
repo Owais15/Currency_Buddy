@@ -40,10 +40,10 @@
             <div class="footer-bottom">
                 <p>&copy; 2025 Currency Buddy. All rights reserved.</p>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/owaisraja15/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/owaisraja15"><i class="fab fa-facebook"></i></a>
                     <a href="https://x.com/owais_raja_15"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/owais_raja_15/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/owais-raja/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/owais_raja_15"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/owais-raja"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
